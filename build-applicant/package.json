@@ -1,0 +1,74 @@
+{
+  "name": "reactsumitomo",
+  "version": "0.1.0",
+  "private": true,
+  "engines": {
+    "node": "16.17.0",
+    "npm": "8.18.0"
+  },
+  "homepage": "",
+  "dependencies": {
+    "@coreui/react": "^4.9.1",
+    "@emotion/react": "^11.11.1",
+    "@emotion/styled": "^11.11.0",
+    "@fortawesome/fontawesome-svg-core": "^6.2.0",
+    "@fortawesome/free-regular-svg-icons": "^6.2.0",
+    "@fortawesome/free-solid-svg-icons": "^6.2.0",
+    "@fortawesome/react-fontawesome": "^0.2.0",
+    "@mui/icons-material": "^5.14.1",
+    "@mui/material": "^5.14.2",
+    "@testing-library/jest-dom": "^4.2.4",
+    "@testing-library/react": "^9.3.2",
+    "@testing-library/user-event": "^7.1.2",
+    "animate.css": "^4.1.1",
+    "aos": "^2.3.4",
+    "axios": "^1.2.2",
+    "babel-plugin-macros": "^3.1.0",
+    "bootstrap": "^5.2.2",
+    "bootstrap-icons": "^1.10.5",
+    "html-react-parser": "^3.0.9",
+    "jsonwebtoken": "^9.0.1",
+    "jwt-decode": "^3.1.2",
+    "mdb-react-ui-kit": "^6.2.0",
+    "react": "^16.13.1",
+    "react-bootstrap": "^2.5.0",
+    "react-dom": "^16.13.1",
+    "react-google-font-loader": "^1.1.0",
+    "react-query": "^3.39.2",
+    "react-router-dom": "^5.3.4",
+    "react-scripts": "^2.1.3",
+    "react-spring": "^9.5.5",
+    "react-toastify": "^9.0.3",
+    "react-vertical-timeline-component": "^3.6.0",
+    "typeface-roboto": "^1.1.13",
+    "web-vitals": "^3.1.0"
+  },
+  "scripts": {
+    "start": "react-scripts --openssl-legacy-provider start",
+    "build": "react-scripts --openssl-legacy-provider build"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@iconify/icons-akar-icons": "^1.2.11",
+    "@iconify/icons-bx": "^1.2.5",
+    "@iconify/icons-bxs": "^1.2.5",
+    "@iconify/icons-carbon": "^1.2.11",
+    "@iconify/icons-ic": "^1.2.10",
+    "@iconify/icons-wpf": "^1.2.2",
+    "@iconify/react": "^4.1.1"
+  }
+}

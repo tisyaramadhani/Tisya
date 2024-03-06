@@ -1,0 +1,108 @@
+{
+  "openapi": "3.0.1",
+  "info": {
+    "title": "Rest Api Recruitment System",
+    "description": "Rest Api Recruitment System PT Sumitomo Wiring System Batam",
+    "version": "1.0.0"
+  },
+  "servers": [
+    {
+      "url": "http://127.0.0.1:5000/api/v1"
+    }
+  ],
+  "tags": [
+    {
+      "name": "USER",
+      "description": "rest api user authentication"
+    }
+  ],
+  "paths": {
+    "/user": {
+      "post": {
+        "description": "Get All Users",
+        "tags": ["USER"],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/User"
+              },
+              "examples": {
+                "Body Request": {
+                  "value": {
+                    "nik": 2171098734667828,
+                    "name": "andre",
+                    "email": "andre@gmail.com",
+                    "password": "andre",
+                    "confPassword": "andre",
+                    "verified": "false",
+                    "roles_id": 3
+                  }
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "201": {
+            "description": "User Created",
+            "content": {
+              "application/json; charset=utf-8": {
+                "schema": {
+                  "$ref": "#/components/schemas/User"
+                },
+                "examples": {
+                  "response": {
+                    "value": {
+                      "sum": 3,
+                      "message": "Success"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Bad Request"
+          }
+        }
+      }
+    }
+  },
+
+  "components": {
+    "schemas": {
+      "User": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "INTEGER",
+            "primaryKey": "true",
+            "unique": "true"
+          },
+          "nik": {
+            "type": "STRING"
+          },
+          "name": {
+            "type": "STRING"
+          },
+          "email": {
+            "type": "STRING"
+          },
+          "password": {
+            "type": "STRING"
+          },
+          "verified": {
+            "type": "BOOLEAN",
+            "default": "false"
+          },
+          "roles_id": {
+            "type": "INTEGER",
+            "enum": [1,2,3],
+            "default": 3
+          }
+        }
+      }
+    }
+  }
+}
